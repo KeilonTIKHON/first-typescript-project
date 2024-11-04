@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 interface CardProps {
-    width:string,
-    height:string
+    width?:string,
+    height?:string,
+    children?:React.ReactNode
+    
 }
 
-const Card=({width, height}:CardProps)=>{
+const Card: FC<CardProps>=({width, height,children})=>{
   return (
-    <div style={{width}}>
-      
+    <div style={{width, height, border:'1px solid gray'}}>
+      {children}
     </div>
   );
 }

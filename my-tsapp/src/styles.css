@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0;
+    
+  }
+  .Header{
+    height:90px;
+    width: 100vw;
+    background-color: rgba(14, 14, 14, 0.274);
+    position:fixed;
+    display: flex;
+    justify-content:baseline;
+    overflow: hidden;
+  }
+  .PagesCont{
+    list-style: none;
+    flex-basis: 50%;
+    padding-top: 15px;
+    padding-left: 80px;
+  }
+  .PagesCont li{
+    display: inline;
+    margin: 20px;
+  }
+  .back{
+    height: 780px;
+    background-image: url(./images/dune-part-two-8k-movie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mockMovie{
+    width:15vw;
+    height: 15vw;
+    background-color: rgb(24, 24, 24);
+    border-radius: 20%;
+  }
+  .slidercont{
+    background-color: rgb(24, 24, 24);
+    padding-bottom: 75px;
+  }
+  .sliderheadr{
+    color: antiquewhite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 70px 0px 70px 40px;
+    font-size: 36px;
+  }
+  .slidercont{
+    align-items: center;
+    overflow: hidden;
+  }
+  .slidercont2{
+    padding: 0px;
+  }
+  .slidercont2 >div >div:first-child{
+    width:5vw;
+    margin-left:calc(5vw + 6px) ;
+  }
+  .slidercont2 >div >div >div{
+  margin-left:00px;
+  margin-right: -00px;
+  }
+  .slidercont2 >div >div >div >a{
+    display: inline-block;
+    width:15vw;
+  }
+  .logo{
+    background-image: url(./images/352fa03acc57b04e4e8d83b60987fbc1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    z-index: 100;
+    margin-top: 6px;
+    overflow: hidden;
+  }
+  
+  .logoCont{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-left: 60px;
+  }
+  .logoText{
+    margin-top: 10px;
+    margin-left: 50px;;
+    color: antiquewhite;
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+  }
+  .headerMenu{
+    color: antiquewhite;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    
+  }
+  .footer{
+    height: 500px;
+    background-color: rgb(20, 20, 20);
+  }
+
+  
