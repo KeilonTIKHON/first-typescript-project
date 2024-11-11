@@ -8,6 +8,8 @@ import { collection, getDoc, onSnapshot, doc, addDoc } from 'firebase/firestore'
 import db from "../config/firebase"
 import { Link } from "react-router-dom";
 
+import { Footer } from "../component/footer";
+
 export const Register = () => {
     const [users, setUsers] = useState<any>([])
     useEffect(
@@ -125,9 +127,9 @@ export const Register = () => {
                         <Link to={'/login'} style={{ textDecoration: 'none' }}><div className="loginorregister">Log in</div></Link>
                     </div>
                 </div>
-
+                
             </div>
-
+            <Footer></Footer>
         </>
 
 

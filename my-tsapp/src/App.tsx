@@ -5,7 +5,7 @@ import Header from './component/header';
 
 import 'swiper/css';
 import Slider from './component/slider';
-
+import { Footer } from './component/footer';
 
 import db from "./config/firebase"
 
@@ -48,7 +48,7 @@ const App=()=>{
       
       <Slider headr={'Trending Now' as string}></Slider>
       </div>
-      <div className='footer'></div>
+      <Footer></Footer>
     
     </div>
     </>

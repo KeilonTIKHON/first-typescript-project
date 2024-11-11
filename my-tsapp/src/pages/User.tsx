@@ -2,6 +2,6 @@
 
 export const User=()=>{
     return(
-        <div>Hiii</div>
+        <div>User page</div>
     )
 }

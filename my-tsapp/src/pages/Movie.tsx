@@ -5,6 +5,7 @@ import { useEffect, useState, FC } from 'react';
 import ReactPlayer from 'react-player'
 import { collection, getDoc, onSnapshot, doc } from 'firebase/firestore';
 import db from "../config/firebase"
+import { Footer } from '../component/footer';
 
 type Movie = {
     name?: string,
@@ -72,6 +73,7 @@ export const Movie: FC<any> = () => {
 
                 </div>
             </div>
+            <Footer></Footer>
 
 
 
