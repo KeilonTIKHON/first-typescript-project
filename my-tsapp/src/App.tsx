@@ -1,19 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import Card from './component/Card';
+
 import Header from './component/header';
 
-import { Swiper, SwiperSlide,useSwiper } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
 
 import 'swiper/css';
 import Slider from './component/slider';
-import {collection, getDocs, onSnapshot} from 'firebase/firestore';
+
 
 import db from "./config/firebase"
 
 const App=()=>{
-  const [url, setUrl] = useState('https://6720e73498bbb4d93ca6983f.mockapi.io/api/v1/movies')
-  const [movies, setMovies] = useState<object[]>([])
+ 
   
   //useEffect(()=>{
     //fetch(url)
@@ -39,11 +36,11 @@ const App=()=>{
     //[]
   //);
   
-  const swiper = useSwiper()
+  
 
   return (
     <>
-    <Header/>
+    <Header classname={'Header'}/>
     
     <div>
       <div className='back'></div>

@@ -16,16 +16,11 @@ type TSlider = {
 
 }
 
-type Movies = {
-  name:string,
-  picture:string,
-  rating:string,
-  trailerLink:string
-}
+
 
 
 const Slider = (headr: TSlider) => {
-  const [url, setUrl] = useState('https://6720e73498bbb4d93ca6983f.mockapi.io/api/v1/movies')
+  
   const [movies, setMovies] = useState<Array<any>>([])
   useEffect(
     () =>
@@ -54,7 +49,7 @@ const Slider = (headr: TSlider) => {
           onSwiper={(swiper: any) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
-          {movies.map((movie, i) => (<SwiperSlide key={i}><Link to={movie.trailerLink}><div className='mockMovie' style={{ backgroundImage: `url(${movie.picture})`, backgroundSize:`cover`, backgroundRepeat:`no-repeat`, backgroundPosition:`50%` }}>{movie.name}(Movie name)<br />Mock image:<br /></div></Link></SwiperSlide>))}
+          {movies.map((movie, i) => (<SwiperSlide key={i}><Link to={'/'+movie.name} style={{ textDecoration: 'none' }}><div className='mockMovie' style={{ backgroundImage: `url(${movie.picture})`, backgroundSize:`cover`, backgroundRepeat:`no-repeat`, backgroundPosition:`50%` }}></div><div className='mainMovieText'>{movie.movieName}</div></Link></SwiperSlide>))}
 
         </Swiper>
       </div>

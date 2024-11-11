@@ -16,16 +16,27 @@
     display: flex;
     justify-content:baseline;
     overflow: hidden;
+    z-index: 100;
+  }
+  .HeaderMovie{
+    height:90px;
+    width: 100vw;
+    background-color: rgb(3, 3, 3);
+    position:fixed;
+    display: flex;
+    justify-content:baseline;
+    overflow: hidden;
+    z-index: 100;
   }
   .PagesCont{
     list-style: none;
     flex-basis: 50%;
     padding-top: 15px;
-    padding-left: 80px;
+    padding-left: 60px;
   }
   .PagesCont li{
     display: inline;
-    margin: 20px;
+    margin: 15px;
   }
   .back{
     height: 780px;
@@ -38,6 +49,17 @@
     height: 15vw;
     background-color: rgb(24, 24, 24);
     border-radius: 20%;
+  }
+  .mainMovieText{
+    color: antiquewhite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    position: relative;
+    margin-top: 20px;
+    
+    text-align: center;
+    
   }
   .slidercont{
     background-color: rgb(24, 24, 24);
@@ -104,6 +126,197 @@
   .footer{
     height: 500px;
     background-color: rgb(20, 20, 20);
+  }
+  .backImg{
+    background-image: url(https://wallpapers.com/images/high/blurry-city-view-after-the-rain-2jws8re8j355t5h1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .movie{
+    padding: 50px;
+    background-color: rgba(17, 17, 17, 0.966);
+    overflow: hidden;
+  }
+  .movieTitle{
+    color: antiquewhite;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top:60px;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+  }
+  .movieInfo{
+    list-style: none;
+    color: antiquewhite;
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    position: absolute;
+    top:190px;
+    left:calc(29vw + 300px)
+  }
+  .movieInfo >li{
+    margin-top: 50px;
+  }
+  .imgsmall{
+    width: 500px;
+    height: 500px;
+    border-radius: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-left: calc(20vw - 200px);
+    margin-top: 200px;
+    margin-bottom: 80px;
+  }
+  .sinopsis{
+    width: calc(85vw - 100px);
+    color: antiquewhite;
+    font-size: 26px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    margin-left: 50px;
+  }
+  .movieplayer{
+    border-radius: 5px;
+    width: calc(100vw - 680px);
+    height: calc((100vw - 680px) * 0.569);
+    margin-left: 300px;
+    margin-top: 50px;
+    padding-top: calc((100vw - 680px) * 0.569*0.01) ;
+    padding-bottom: calc((100vw - 680px) * 0.569*0.01);
+    padding-left: calc((100vw - 680px)*0.005);
+    padding-right: calc((100vw - 680px)*0.005);
+    background-color: rgba(255, 255, 255, 0.123);
+    overflow: hidden;
+  }
+  .PlLogo{
+    width: 70px;
+    height: 70px;
+    background-color: azure;
+    border-radius: 50%;
+  }
+  .regback{
+    background-color: rgba(17, 17, 17, 0.76);
+    height: 100vh;
+  }
+  .logForm{
+    padding: 80px 100px 50px 0px;
+    background-color: rgba(32, 32, 32, 0.712);
+    border-radius: 50px;
+    width: 600px;
+    position: absolute;
+    top:300px;
+    left:calc(50vw - 300px)
+  }
+  .usHeader{
+    color: antiquewhite;
+    font-size: 36px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    position: relative;
+    top:-40px;
+    text-align: center;
+    left: 40px;
+  }
+  .loginorregister{
+    color: antiquewhite;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    position: relative;
+    left: 400px;
+    top:-105px;
+  }
+  .PlName{
+    color: antiquewhite;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    left:-5px;
+  }
+  @media screen and (max-width: 1100px) {
+    .movieplayer{
+      border-radius: 5px;
+      width: 78vw;
+      height: 45vw;
+      margin-left: 50px;
+      margin-top: 50px;
+      padding-top: calc((100vw - 380px) * 0.569*0.02) ;
+    padding-bottom: calc((100vw - 380px) * 0.569*0.02);
+    padding-left: calc((100vw - 380px)*0.01);
+    padding-right: calc((100vw - 380px)*0.01);
+    }
+    .imgsmall{
+      width: 600px;
+      height: 600px;
+      border-radius: 5%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      margin-left: calc(50vw - 350px);
+      margin-top: 200px;
+      margin-bottom: 80px;
+    }
+    .movieInfo{
+      list-style: none;
+      color: antiquewhite;
+      font-size: 28px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 500;
+      overflow: hidden;
+      position: static;
+      margin-bottom: 90px;
+    }
+    .sinopsis{
+      width: calc(85vw - 100px);
+      color: antiquewhite;
+      font-size: 24px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 200;
+      margin-left: 40px;
+      
+    }
+    .logoText{
+      margin-top: 25px;
+      margin-left: 10px;;
+      color: antiquewhite;
+      font-size: 25px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 700;
+    }
+    .headerMenu{
+      color: antiquewhite;
+      font-size: 16px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 400;
+      
+    }
+    .PagesCont{
+      list-style: none;
+      flex-basis: 15%;
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+    .PagesCont li{
+      display: inline;
+      margin: 10px;
+    }
+    .logoCont{
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      margin-left: 30px;
+    }
+    
   }
 
   
